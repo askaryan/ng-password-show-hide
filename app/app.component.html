@@ -1,0 +1,20 @@
+<h1>Font Awesome examples</h1>
+
+<h3>Icon as Object (with title attribute—inspect the DOM to see it)</h3>
+<fa-icon [icon]="faCoffee" title="Coffee: Best Drink Ever"></fa-icon>
+  
+  
+  <div class="inputWithIcon inputIconBg">
+    <input type="text" placeholder="Your name">   
+    <fa-icon [icon]="faUser" title="User: User icon"></fa-icon>
+  </div>
+
+  <div class="inputWithIcon">
+    <input [type]="passwordType" placeholder="Your password">    
+    <fa-icon [icon]="passwordShown ? faEyeSlash : faEye " (click) = "onClick($event)" title="EyeSlash: Eye Slash" ></fa-icon>
+  </div>
+  
+  
+  <input type="text" placeholder="Age">
+
+  
